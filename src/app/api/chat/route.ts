@@ -17,7 +17,7 @@ interface ChatResponse {
 }
 
 const API_URL = process.env.OPENROUTER_API_URL || "https://openrouter.ai/api/v1/chat/completions";
-const MODEL = process.env.OPENROUTER_MODEL || "meta-llama/llama-3.2-1b-instruct:free";
+const MODEL = process.env.OPENROUTER_MODEL || "meta-llama/llama-3.2-3b-instruct:free";
 
 export async function POST(req: NextRequest) {
   try {
