@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import Image from "next/image";
 
 export default function Home() {
   const [input, setInput] = useState('');
@@ -38,17 +37,6 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen bg-black text-white">
-      <header className="mb-8">
-        <Image
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <h1 className="text-2xl font-bold mt-4 text-white">AI Chat Interface</h1>
-      </header>
-
       <main className="flex-grow container mx-auto p-6 flex flex-col">
         <div className="flex-grow mb-6 overflow-y-auto rounded-lg bg-black shadow-inner p-4 border border-white">
           {messages.map((msg, index) => (
@@ -85,7 +73,7 @@ export default function Home() {
       </main>
 
       <footer className="mt-8 text-center text-sm text-white">
-        Powered by Next.js and OpenRouter AI
+        Please note that this AI language model may provide inaccurate information.
       </footer>
     </div>
   );
